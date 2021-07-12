@@ -1,0 +1,13 @@
+@import "./fonts";
+// @import "./colors"; 
+
+* {
+    font-family: 'Roboto', serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
