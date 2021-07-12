@@ -29,29 +29,38 @@ export default {
 <style lang="scss" scoped>
     .nav{
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        height: 110px;
+        justify-content: space-between;
+        margin-top: 20px;
+        
         .logo{
-            border: 1px solid black;
-            width: 400px;
+            width: 150px;
             .img{
                 width: 100% ;
+                vertical-align: middle;
             }
         }
         .top-list{
             display: flex;
-            flex-grow: 1;
+            height: 110px;
             li{
-                padding: 10px;
+                line-height: 110px;
                 list-style: none;
-                margin: 0 5px;
-                border: 1px solid blue;
+                margin: 0 10px;
+                &:hover{
+                    border-bottom: 2px solid rgb(62, 146, 255);
+                }
+                
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: rgb(61, 61, 61);
+                    font-weight: bold;
+                    &:hover{
+                    color: rgb(62, 146, 255);
+                    }
                 }
             }
         }
-
-    }
+}
 </style>
