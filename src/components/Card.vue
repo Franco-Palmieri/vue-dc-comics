@@ -10,10 +10,23 @@
 <script>
 export default {
     name: "Card",
-    props: ["comics"],
+    props: ["comic"],
 }
 </script>
 
 <style scoped lang="scss">
+    .comic-cart{
+        width: calc(100% / 6);
+        padding: 0 15px;
+        height: 250px;
+        .comic-name{
+            color: white;
+            font-size: 15px;
+        }
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    }
 
 </style>

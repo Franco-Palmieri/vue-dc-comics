@@ -1,12 +1,15 @@
 <template>
     <div class="main">
         <div class="container">
-            <Card v-for="(comic, index) in comics" :key="index" :comic="comic"/>
+            <div class="content-comics">
+                <Card v-for="(comic, index) in comics" :key="index" :comic="comic"/>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+
 import Card from "./Card.vue"
 
 export default {
@@ -20,7 +23,11 @@ export default {
 
 <style scoped lang="scss">
     .main{
-        height: 100px;
-        background-color: #ccc;
+        background-color: rgb(19, 19, 19);
+        .content-comics{
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 </style>
