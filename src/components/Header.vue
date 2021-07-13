@@ -49,7 +49,7 @@ export default {
                 list-style: none;
                 margin: 0 10px;
                 &:hover{
-                    border-bottom: 2px solid rgb(62, 146, 255);
+                    border-bottom: 4px solid rgb(62, 146, 255);
                 }
                 
                 a{
